@@ -15,7 +15,12 @@
 
         <h1>Hundreds Chart</h1>
 
-        <div id="hchart-container"></div>
+        <div id="hchart-container" class="container"></div>
+
+        <p><label for="config-countBy">Count by</label> <input type="number" id="config-countBy" class="config" value="3" min="1" max="100" /></p>
+        <p><label for="config-rowLength">Each row has</label> <input type="number" id="config-rowLength" class="config" value="10" min="1" max="100" /> numbers</p>
+
+        <!--<p><button id="generate">Make a Chart!</button></p>-->
 
         <script src="js/main.js"></script>
     </body>

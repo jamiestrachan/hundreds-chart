@@ -1,12 +1,12 @@
 function generateChart() {
   var targetId = "hchart-container";
-  var rowLength = 10;
+  var rowLength = document.getElementById("config-rowLength").value;
   var needAtLeast = 100;
   var startFrom = 1;
   var cellCounter = startFrom;
   var rowCounter = 1;
   var lastRow = false;
-  var countBy = 3;
+  var countBy = document.getElementById("config-countBy").value;
   var startCountAt = 0;
 
   var cellClass = "";
@@ -35,5 +35,9 @@ function generateChart() {
 
   document.getElementById(targetId).innerHTML = chartHTML;
 }
+
+//document.getElementById("generate").addEventListener("click", generateChart, false);
+document.getElementById("config-countBy").addEventListener("change", generateChart, false);
+document.getElementById("config-rowLength").addEventListener("change", generateChart, false);
 
 generateChart();
