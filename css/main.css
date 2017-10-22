@@ -56,7 +56,20 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.hchart {
+  border-collapse: collapse;
+}
 
+.hchart-cell {
+  border: 1px solid #444;
+  text-align: right;
+  padding: 8px;
+}
+
+.highlight {
+  background: yellow;
+  font-weight: bold;
+}
 
 
 
